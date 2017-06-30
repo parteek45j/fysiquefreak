@@ -88,8 +88,10 @@ public class HomeActivity extends AppCompatActivity
             FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragme,muscels);
             fragmentTransaction.commit();
+            overridePendingTransition(R.anim.side_in_right,R.anim.side_out_left);
 
         } else if (id == R.id.nav_slideshow) {
+
 
         } else if (id == R.id.nav_manage) {
 

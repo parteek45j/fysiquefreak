@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -16,6 +18,7 @@ import android.widget.ImageButton;
  */
 public class Muscels extends Fragment implements View.OnClickListener {
     ImageButton button;
+    Animation animation;
 
     public Muscels() {
         // Required empty public constructor
@@ -27,6 +30,8 @@ public class Muscels extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_muscels, container, false);
         button=(ImageButton)view.findViewById(R.id.biceps);
+        animation= AnimationUtils.loadAnimation(getActivity(),R.anim.anim_alpha);
+        button.setAnimation(animation);
         button.setOnClickListener(this);
         // Inflate the layout for this fragment
         return view;
@@ -35,6 +40,7 @@ public class Muscels extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
+        v.startAnimation(animation);
         Intent intent=new Intent(getActivity(),Excersice.class);
         startActivity(intent);
         getActivity().overridePendingTransition(R.anim.side_in_right,R.anim.side_out_left);
