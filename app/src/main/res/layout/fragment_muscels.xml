@@ -1,100 +1,152 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:iew="http://schemas.android.com/tools">
 
-    tools:context="com.android.parteek.fysquefreak.Muscels">
-    <ScrollView
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="200dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:layout_marginTop="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        <ImageButton
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
             android:layout_width="match_parent"
-            android:id="@+id/biceps"
-            android:layout_height="170dp"
-            android:background="@drawable/muscel" />
+            android:background="#E1F5FE"
+            android:layout_marginTop="60dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ni" />
+
+
+
             <TextView
+                android:id="@+id/txtheading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton"
                 android:text="Biceps"
-                android:textSize="15dp"
-                android:textColor="@color/colortext"/>
-        </android.support.v7.widget.CardView>
+                android:layout_marginLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
 
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
             <ImageButton
+                android:id="@+id/imageButton1"
                 android:layout_width="match_parent"
-                android:id="@+id/triceps"
-                android:layout_height="150dp"
-                android:background="@drawable/muscel5" />
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtheading"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abs" />
+
+
+
             <TextView
+                android:id="@+id/txtheading1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Triceps"
-                android:textSize="15dp"
-                android:textColor="@color/colortext" />
-        </android.support.v7.widget.CardView>
+                android:layout_below="@+id/imageButton1"
+                android:text="Abs"
+                android:layout_marginLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
 
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
             <ImageButton
+                android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
-                android:id="@+id/chest"
-                android:layout_height="150dp"
-                android:background="@drawable/muscel4" />
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtheading1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sh" />
+
+
+
             <TextView
+                android:id="@+id/txtheading2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chest"
-                android:textSize="15dp"
-                android:textColor="@color/colortext"/>
-        </android.support.v7.widget.CardView>
+                android:layout_below="@+id/imageButton2"
+                android:text="Shoulder"
+                android:layout_marginLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
 
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
             <ImageButton
+                android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
-                android:id="@+id/back"
-                android:layout_height="150dp"
-                android:background="@drawable/muscel3" />
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtheading2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bk" />
+
+
+
             <TextView
+                android:id="@+id/txtheading3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton3"
                 android:text="Back"
-                android:textSize="15dp"
-                android:textColor="@color/colortext"/>
-        </android.support.v7.widget.CardView>
+                android:layout_marginLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
 
-            <android.support.v7.widget.CardView
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtheading3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/muscel4" />
+
+
+
+            <TextView
+                android:id="@+id/txtheading4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:id="@+id/shoulder"
-                    android:layout_height="170dp"
-                    android:background="@drawable/muscel2" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Shoulder and Traps"
-                    android:textSize="15dp"
-                    android:textColor="@color/colortext"/>
-            </android.support.v7.widget.CardView>
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton4"
+                android:text="Chest"
+                android:layout_marginLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
 
-    </LinearLayout>
-    </ScrollView>
-</FrameLayout>
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtheading4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tri" />
+
+
+
+            <TextView
+                android:id="@+id/txtheading5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton5"
+                android:text="Triceps"
+                android:layout_marginLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

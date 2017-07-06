@@ -19,7 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Excersice"></activity>
+        <activity android:name=".Excersice" />
+        <activity android:name=".Biceps" />
+        <activity android:name=".Chest" />
+        <activity android:name=".BenchPress" />
+        <activity android:name=".InclineBench" />
+        <activity android:name=".InclinedDumbell" />
+        <activity android:name=".ParallelDips"></activity>
     </application>
 
 </manifest>
