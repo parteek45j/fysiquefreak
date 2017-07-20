@@ -9,6 +9,9 @@ public class Bean {
     String Title, Desc;
     int image;
 
+    public Bean() {
+
+    }
     public Bean(String title, int image) {
         Title = title;
         this.image = image;

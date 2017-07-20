@@ -19,13 +19,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Excersice" />
         <activity android:name=".Biceps" />
-        <activity android:name=".Chest" />
-        <activity android:name=".BenchPress" />
-        <activity android:name=".InclineBench" />
-        <activity android:name=".InclinedDumbell" />
-        <activity android:name=".ParallelDips"></activity>
+        <activity
+            android:name=".Chest"
+            android:label="Chest Excercises" />
+        <activity
+            android:name=".BenchPress"
+            android:label="Bench Press" />
+        <activity
+            android:name=".InclineBench"
+            android:label="Incline Bench" />
+        <activity
+            android:name=".InclinedDumbell"
+            android:label="Incline Dumbell" />
+        <activity
+            android:name=".ParallelDips"
+            android:label="Parallel Dips" />
+        <activity
+            android:name=".NewSchedule"
+            android:label="New Schedule" />
+        <activity
+            android:name=".MuscelsActivity"
+            android:label="Choose Muscel" />
+        <activity
+            android:name=".schedule.ScheduleChest"
+            android:label="Select Exercises" />
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.android.parteek.fysquefreak.cp.provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".schedule.ScheduleList"
+            android:label="Schedule"></activity>
     </application>
 
 </manifest>
